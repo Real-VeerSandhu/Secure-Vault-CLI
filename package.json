@@ -1,0 +1,27 @@
+{
+  "name": "securevault-cli",
+  "version": "1.0.0",
+  "description": "A secure CLI password manager",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts"
+  },
+  "bin": {
+    "securevault": "./dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clipboardy": "^2.3.0",
+    "crypto-js": "^4.1.1",
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/inquirer": "^8.2.3",
+    "@types/node": "^18.15.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
